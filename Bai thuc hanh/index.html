@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./shopping-cart/cart.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="container">
+      <header>
+        <nav>
+          <div class="img-nav">
+            <img src="anh/logo.png" alt="" width="80" height="80" />
+          </div>
+          <div class="content-nav">
+            <ul>
+              <li><a href="#">Trang Chủ</a></li>
+              <li><a href="#">Sản Phẩm</a></li>
+              <li><a href="#">Liên Hệ</a></li>
+              <li><a href="#">Giới Thiệu</a></li>
+            </ul>
+            <form>
+              <input
+                type="text"
+                name="search"
+                placeholder="Tìm kiếm sản phẩm..."
+              />
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <div class="shopping">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="quantity">0</span>
+          </div>
+        </nav>
+      </header>
+      <div class="list"></div>
+    </div>
+    <div class="cart">
+      <h1>Cart</h1>
+      <ul class="listCart"></ul>
+      <div class="checkOut">
+        <div class="total">0</div>
+        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+        <div class="closeShopping">Close</div>
+      </div>
+    </div>
+
+    <script src="./shopping-cart/cart.js"></script>
+  </body>
+</html>
